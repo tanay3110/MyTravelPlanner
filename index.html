@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripCraft</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <!-- <div class="logo">TripCraft</div>
+        <ul class="nav-links">
+            <li><a href="#">Explore</a></li>
+            <li><a href="builder.html">Plan a Trip</a></li>
+        </ul> -->
+    </nav>
+
+    <!-- HERO + SEARCH -->
+    <section class="hero">
+        <h1>Where do you want to go?</h1>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search destination..." auotofocus>
+            <button onclick="searchTrips()">Search</button>
+        </div>
+
+        <!-- TOP PICKS — click fills search bar -->
+        <div class="top-picks">
+            <span>Top Picks:</span>
+            <button class="pick-chip" onclick="fillSearch('Manali')">Manali</button>
+            <button class="pick-chip" onclick="fillSearch('Goa')">Goa</button>
+            <button class="pick-chip" onclick="fillSearch('Kashmir')">Kashmir</button>
+            <button class="pick-chip" onclick="fillSearch('Jaipur')">Jaipur</button>
+            <button class="pick-chip" onclick="fillSearch('Kedarnath')">Kedarnath</button>
+        </div>
+    </section>
+
+    <!-- COMMUNITY TRIPS -->
+    <section class="community-trips">
+        <h2>Trips by the Community</h2>
+        <div class="trips-grid">
+
+            <div class="trip-card">
+                <h3>Kashmir — 7 Days</h3>
+                <p>👥 4 people ·  ₹25,000 · 📅 Dec 2023</p>
+            </div>
+
+            <div class="trip-card">
+                <h3>Goa — 5 Days</h3>
+                <p>👥 6 people · ₹18,000 · 📅 Jan 2024</p>
+            </div>
+
+            <div class="trip-card">
+                <h3>Manali — 6 Days</h3>
+                <p>👥 3 people · ₹20,000 · 📅 Mar 2024</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Made with ❤️ for Indian travelers</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

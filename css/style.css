@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+.search-bar{
+    height: 80vh;
+    justify-content: center;    
+}
+#searchInput{
+    border: 1px transparent solid;
+    border-radius: 10px;
+    box-shadow: inset black;
+}
+
+.community-trips {
+    margin-top: 1rem;
+    text-align: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100vh;
+    }
+
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
