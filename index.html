@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TripCraft</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
 
     <!-- NAVBAR -->
@@ -23,37 +26,39 @@
         <h1>Where do you want to go?</h1>
 
         <div class="search-bar">
-            <input type="text" id="searchInput" placeholder="Search destination..." auotofocus>
-            <button onclick="searchTrips()">Search</button>
+            <input type="text" id="searchInput" placeholder="Search destination..." autocomplet="off">
+            <button type="button" class="btn btn-secondary" onclick="searchTrips()">Search</button>
         </div>
 
         <!-- TOP PICKS — click fills search bar -->
-        <div class="top-picks">
+        <div class="top-picks btn-group" >
             <span>Top Picks:</span>
-            <button class="pick-chip" onclick="fillSearch('Manali')">Manali</button>
-            <button class="pick-chip" onclick="fillSearch('Goa')">Goa</button>
-            <button class="pick-chip" onclick="fillSearch('Kashmir')">Kashmir</button>
-            <button class="pick-chip" onclick="fillSearch('Jaipur')">Jaipur</button>
-            <button class="pick-chip" onclick="fillSearch('Kedarnath')">Kedarnath</button>
+            <div class="btn-group" role="group" aria-label="Top Picks">
+                <button class="btn btn-outline-primary pick-chip" onclick="fillSearch('Manali')">Manali</button>
+                <button class="btn btn-outline-primary pick-chip" onclick="fillSearch('Goa')">Goa</button>
+                <button class="btn btn-outline-primary pick-chip" onclick="fillSearch('Kashmir')">Kashmir</button>
+                <button class="btn btn-outline-primary pick-chip" onclick="fillSearch('Jaipur')">Jaipur</button>
+                <button class="btn btn-outline-primary pick-chip" onclick="fillSearch('Kedarnath')">Kedarnath</button>
+            </div>
         </div>
     </section>
-
     <!-- COMMUNITY TRIPS -->
-    <section class="community-trips">
+    <section class="community-trips card">
         <h2>Trips by the Community</h2>
+        
         <div class="trips-grid">
 
-            <div class="trip-card">
+            <div class="trip-card card-body">
                 <h3>Kashmir — 7 Days</h3>
-                <p>👥 4 people ·  ₹25,000 · 📅 Dec 2023</p>
+                <p>👥 4 people · ₹25,000 · 📅 Dec 2023</p>
             </div>
 
-            <div class="trip-card">
+            <div class="trip-card card-body">
                 <h3>Goa — 5 Days</h3>
                 <p>👥 6 people · ₹18,000 · 📅 Jan 2024</p>
             </div>
 
-            <div class="trip-card">
+            <div class="trip-card  card-body">
                 <h3>Manali — 6 Days</h3>
                 <p>👥 3 people · ₹20,000 · 📅 Mar 2024</p>
             </div>
@@ -67,6 +72,9 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
